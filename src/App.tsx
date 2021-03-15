@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Menuitem } from "./components/menu";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div
+        style={{ width: "100vw", height: "60px", backgroundColor: "blue" }}
+      ></div>
+      <div style={{ display: "flex" }}>
+        <div
+          style={{ height: "100vh", width: "60px", backgroundColor: "red" }}
+        ></div>
+        <Menuitem />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
